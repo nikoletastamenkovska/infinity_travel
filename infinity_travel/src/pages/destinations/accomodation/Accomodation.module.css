@@ -1,0 +1,7 @@
+.styled_container {
+    background-color: #EEF1F4;
+}
+
+.hr {
+    border: 1px solid var(--infinity-blue);
+}

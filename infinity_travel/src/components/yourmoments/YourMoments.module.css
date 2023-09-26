@@ -1,0 +1,86 @@
+.carousel_content {
+    position: relative;
+}
+
+.location_caption {
+    display: inline-block;
+    padding: 8px 12px;
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    width: 80%;
+    display: flex;
+    font-weight: var(--semibold);
+}
+
+.location_bg {
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.location_icon {
+    width: 30px !important;
+    height: 25px;
+}
+
+.close_icon {
+    width: 40px;
+    aspect-ratio: 1;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.animator_div {
+    animation: modalAnim 3s ease 0s 1 normal forwards;
+}
+
+.custom_prev,
+.custom_next {
+    cursor: pointer;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    justify-self: center;
+    z-index: 1;
+    border: none;
+    padding: 10px;
+}
+
+
+.custom_next {
+    right: 0;
+}
+
+.custom_prev img,
+.custom_next img {
+    background: url('/icons_img/arrow_bg.png');
+    width: 40px;
+    padding: 10px;
+}
+
+/* ...............................media................................*/
+
+@media(max-width: 425px) {
+
+    .custom_prev img,
+    .custom_next img {
+        background: url('/icons_img/arrow_bg.png');
+        width: 20px;
+        padding: 5px;
+    }
+}
+
+/*....................animation..................*/
+@keyframes modalAnim {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

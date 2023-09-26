@@ -1,0 +1,38 @@
+.bg_testimonial_card {
+    background-color: var(--infinity-white);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    border-radius: 4px;
+    transition: transform 1s ease;
+}
+
+.bg_testimonial_card:hover {
+    transform: scale(1.1);
+}
+
+.yellow_tape {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.liner {
+    position: absolute;
+    bottom: 10%;
+    left: 0
+}
+
+@media(max-width: 426px) {
+    .yellow_tape {
+        width: 50%;
+        top: -3%;
+    }
+}
+
+@media(min-width:426px) and (max-width:769px) {
+    .yellow_tape {
+        width: 60%;
+        top: -5%;
+    }
+}

@@ -1,0 +1,26 @@
+.styled_h2 {
+    margin-bottom: 2rem;
+}
+
+.styles_label_radio {
+    font-size: var(--h20);
+}
+
+
+
+.check_input_styled:checked {
+    background-color: var(--purple-font);
+    border: 2px solid var(--purple-font);
+}
+
+.styled_submit_btn {
+    background-color: var(--infinity-yellow);
+    transition: all .4s linear;
+    text-transform: uppercase;
+    font-weight: var(--bold);
+}
+
+.styled_submit_btn:hover {
+    background-color: var(--infinity-blue);
+    color: var(--infinity-white);
+}

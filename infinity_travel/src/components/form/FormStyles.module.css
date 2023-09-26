@@ -1,0 +1,28 @@
+.styled_input {
+    border-radius: 4px;
+    width: 100%;
+    padding: .8rem;
+    border: 1px solid #ddd;
+    transition: background-color .3s linear;
+}
+
+.styled_input:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+.styled_button {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    margin-top: 38px;
+    width: 100%;
+    padding: .8rem;
+    background-color: var(--infinity-yellow);
+    text-transform: uppercase;
+    font-weight: var(--bold);
+    transition: all .3s linear;
+}
+
+.styled_button:hover {
+    border: 2px solid var(--infinity-purple);
+    color: var(--infinity-purple);
+}

@@ -1,0 +1,288 @@
+.background_styled {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.background_styled_main {
+    margin-block: 1.5rem;
+    background-image: url('/images/group_travel/group_travel_img_02.png');
+    height: 65vh;
+    position: relative;
+}
+
+
+.info_group_travel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.info_button {
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.sticker_of_london {
+    width: 25%;
+    position: absolute;
+    top: -10%;
+    left: 30%;
+    transform: translate(-20%, -15%);
+    transform: rotate(30deg);
+}
+
+.sticker_of_istanbul {
+    width: 40%;
+    position: absolute;
+    bottom: -5%;
+    left: 15%;
+    transform: translate(-25%, 0);
+    transform: rotate(10deg);
+}
+
+.sticker {
+    width: 40%;
+    position: absolute;
+    bottom: -5%;
+    right: 0;
+    transform: rotate(-5deg);
+}
+
+.backgroung_1 {
+    background-image: url('/images/group_travel/group_travel_img_01.png');
+}
+
+.backgroung_2 {
+    background-image: url('/images/group_travel/group_travel_img_03.png');
+}
+
+.backgroung_3 {
+    background-image: url('/images/group_travel/group_travel_img_top_2.png');
+}
+
+.backgroung_4 {
+    background-image: url('/images/group_travel/group_travel_img_5.png');
+}
+
+.first_background_row {
+    height: 40vh;
+}
+
+.second_background_row {
+    height: 20vh;
+    background-size: contain;
+}
+
+/* ..................................desctop............................................. */
+
+.wrapper_desc {
+    display: none;
+}
+
+.background_styled_desc {
+    background-image: url('/images/group_travel/group_travel_img_02.png');
+}
+
+.info_group_travel_desc {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    transform: translate(-5%, -40%);
+}
+
+.info_button_desc {
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.sticker_of_london_desk {
+    width: 15%;
+    position: absolute;
+    top: -5%;
+    left: 25%;
+    transform: translate(-20%, -15%);
+    transform: rotate(30deg);
+}
+
+.sticker_of_istanbul_desk {
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    transform: translate(-25%, 0);
+    transform: rotate(10deg);
+}
+
+.sticker_desk {
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-5deg);
+}
+
+
+
+/* .........................................taped section......................................... */
+.bg_tapped {
+    background-color: rgb(244, 247, 247);
+}
+
+.taped_row {
+    background: url('/images/group_travel/background_taped.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    justify-content: center;
+    height: 170px;
+    position: relative;
+}
+
+.icon_styled {
+    padding-block: 1rem;
+    height: 50%;
+    margin-inline: auto;
+}
+
+.p_styled {
+    text-align: center;
+    height: 50%;
+    margin-bottom: 0;
+}
+
+.violet_tape {
+    position: absolute;
+    width: 35%;
+}
+
+.violet_tape_top {
+    top: -15%;
+    left: -15%;
+}
+
+.violet_tape_bottom {
+    bottom: -10%;
+    right: -10%;
+}
+
+/* ............................................media query......................................... */
+
+@media(max-width:768px) {
+    .info_group_travel {
+        width: 80%;
+    }
+
+    .p_styled {
+        font-size: 10px;
+    }
+}
+
+
+@media(min-width:768px) and (max-width:1024px) {
+    .sticker_of_london {
+        width: 20%;
+    }
+
+    .sticker_of_istanbul {
+        width: 30%;
+    }
+
+    .sticker {
+        width: 30%;
+        bottom: -5%;
+    }
+
+    .taped_row {
+        height: 300px;
+
+    }
+
+    .icon_styled {
+        padding-top: 2rem;
+        width: 70px;
+    }
+
+    .p_styled {
+        padding-bottom: 2rem;
+        font-size: var(--text-m);
+    }
+}
+
+@media(min-width:1024px) {
+    .background_styled_main {
+        display: none;
+    }
+
+    .wrapper_desc {
+        display: block;
+        padding-bottom: 2rem;
+        height: 100%;
+        position: relative;
+    }
+
+    .taped_row {
+        height: 250px;
+    }
+
+    .icon_styled {
+        height: 100px;
+    }
+
+    .p_styled {
+        font-size: var(--text-l);
+    }
+
+    .violet_tape {
+        width: 20%;
+    }
+
+    .violet_tape_top {
+        top: -5%;
+        left: -5%;
+    }
+
+    .violet_tape_bottom {
+        bottom: -5%;
+        right: -5%;
+    }
+}
+
+@media(min-width:1440px) {
+
+    .styled_h3 {
+        font-size: var(--h-32);
+    }
+
+    .styled_p {
+        text-align: center;
+        font-size: var(--h20);
+        padding: 2rem;
+    }
+
+    .info_group_travel_desc {
+        width: 35%;
+    }
+
+    .violet_tape_top {
+        top: -45%;
+        left: -5%;
+    }
+
+    .violet_tape_bottom {
+        bottom: -45%;
+        right: -5%;
+    }
+}

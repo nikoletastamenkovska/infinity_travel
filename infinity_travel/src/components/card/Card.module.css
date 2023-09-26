@@ -1,0 +1,73 @@
+.styled_card {
+    width: 100%;
+    position: relative;
+    border: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.styled_img_wrapper {
+    height: auto;
+    overflow: hidden;
+}
+
+.styled_img {
+    transition: transform 1s ease;
+    height: 191px;
+}
+
+.styled_card:hover .styled_img {
+    transform: scale(1.2);
+}
+
+
+.styled_title {
+    font-size: var(--text-m);
+}
+
+.styled_card_button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 2px solid var(--infinity-yellow);
+    font-weight: var(--semibold);
+    font-family: 'Inter', sans-serif;
+    transition: all .5s ease;
+}
+
+.styled_card_button:hover {
+    background-color: var(--infinity-yellow);
+    color: var(--infinity-white);
+}
+
+.grey_text {
+    color: var(--infinity-black-60);
+}
+
+.small_font {
+    font-size: var(--text-s);
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    .styled_card {
+        width: 18rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .styled_card {
+        margin-left: auto;
+        margin-right: auto;
+        width: 16rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .styled_card {
+        width: 20rem;
+    }
+}

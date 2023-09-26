@@ -1,0 +1,18 @@
+.styled_button {
+    min-width: 200px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--h-26);
+    border: 2px solid var(--infinity-blue);
+    padding: .5rem .25rem;
+    transition: all .4s ease-in-out;
+}
+
+.styled_button:hover {
+    color: var(--infinity-white);
+    background-color: var(--infinity-blue);
+}
+
+.active {
+    color: var(--infinity-white);
+    background-color: var(--infinity-blue);
+}

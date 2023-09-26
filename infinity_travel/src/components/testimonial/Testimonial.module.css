@@ -1,0 +1,14 @@
+.col_text_18 {
+    font-size: var(--text-l);
+}
+
+.background_testimonials {
+    background: url('/images/testimonials/background_testimonials.jpg');
+}
+
+@media(max-width: 767px) {
+    .styled_card_row {
+        overflow-y: auto;
+        max-height: 390px;
+    }
+}

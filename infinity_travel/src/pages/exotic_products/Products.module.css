@@ -1,0 +1,38 @@
+.styled_button,
+.option_button {
+    width: 50%;
+    border: none;
+    background-color: transparent;
+    color: var(--infinity-black-60);
+    font-size: var(--text-l);
+    font-family: 'Inter', sans-serif;
+}
+
+.option_button {
+    font-size: var(--h-26);
+    color: var(--purple-font);
+    padding-left: 0;
+    text-align: left;
+}
+
+.styled_button:hover {
+    color: var(--purple-font);
+}
+
+.option_button:hover {
+    color: var(--infinity-black-60);
+}
+
+.styled_color {
+    color: var(--purple-font);
+}
+
+
+
+@media (max-width: 768px) {
+    .option_button {
+        font-size: var(--text-l);
+        color: var(--purple-font);
+        text-align: center;
+    }
+}

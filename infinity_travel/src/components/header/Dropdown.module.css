@@ -1,0 +1,216 @@
+.nav_content {
+    position: fixed;
+    top: 67.11px;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    color: var(--infinity--blue);
+    width: 100%;
+    z-index: 1;
+}
+
+.dropdownMenu {
+    text-decoration: none;
+    list-style-type: none;
+    background: linear-gradient(180deg, rgba(81, 213, 249, 0.54) 1%, rgba(49, 218, 168, 0.45) 100%);
+    padding: 0;
+    min-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+.wrapper {
+    padding-block: .3rem;
+    padding-inline: 5%;
+}
+
+.wrapper:hover {
+    transform: scale(1.1);
+    transition: transform .4s ease;
+}
+
+
+.styled_li {
+    padding: .3rem;
+    margin-bottom: .2rem;
+    position: relative;
+    margin-left: 1.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    animation: right_to_left 1s ease 0s 1 normal forwards;
+}
+
+.odd {
+    background-color: var(--infinity-yellow);
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
+
+.even {
+    background-color: var(--infinity-purple);
+    margin-left: 0;
+    margin-right: 1.5rem;
+}
+
+
+.odd button {
+    color: var(--purple-font);
+}
+
+.even button {
+    color: var(--infinity-white);
+}
+
+.nav_country {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav_item.dropdownMenu {
+    font-size: var(--text-s);
+}
+
+.styled_button {
+    background-color: transparent;
+    border: none;
+    padding: inherit;
+}
+
+.styled_back_button {
+    background-color: transparent;
+    padding: 6px 12px;
+    color: var(--infinity-purple);
+    font-weight: var(--bold);
+    width: 30%;
+    margin-top: 1.5rem;
+    transition: all .4s linear;
+    border: 2px solid var(--infinity-purple);
+}
+
+.styled_back_button:hover {
+    border: 2px solid var(--infinity-yellow);
+    color: var(--purple-font);
+    scale: 1.1;
+}
+
+.active {
+    background: url('/images/ham_bg/background_2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: opacity .4s ease-in-out;
+
+    .dropdownMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        transition: all .4s ease-out;
+        min-height: 85vh;
+    }
+
+    .wrapper {
+        transition: all 0.5s ease 0s;
+    }
+
+}
+
+.wrapper_odd {
+    padding-right: 15%;
+}
+
+.wrapper_even {
+    padding-left: 15%;
+}
+
+/*....................the triangles..............*/
+.signpost {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.triangle_right {
+    border-width: 16px 0 16px 27px;
+    border-color: transparent transparent transparent var(--infinity-purple);
+    left: 100%;
+}
+
+.triangle_left {
+    border-width: 16.5px 27px 16.5px 0;
+    right: 100%;
+    border-color: transparent var(--infinity-yellow);
+}
+
+/*...........media queries...............*/
+
+
+
+@media (max-width: 426px) {
+    .wrapper {
+        width: 300px;
+    }
+
+}
+
+
+@media (min-width: 426px) and (max-width: 769px) {
+    .wrapper {
+        width: 400px;
+    }
+
+    .styled_back_button {
+        width: 60%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1025px) {
+    .wrapper {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1026px) and (max-width: 1441px) {
+    .wrapper {
+        width: 550px;
+    }
+}
+
+@media(min-width: 1250px) {
+    .nav_content {
+        top: 87px;
+    }
+}
+
+@media (min-width: 1441px) {
+
+    .wrapper {
+        width: 600px;
+    }
+
+
+}
+
+/*................animation................*/
+
+@keyframes right_to_left {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

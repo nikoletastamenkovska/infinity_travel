@@ -1,0 +1,41 @@
+.styled_link a {
+    text-decoration: none;
+    color: var(--purple-font);
+    margin-bottom: rem;
+    font-size: var(--text-l);
+    transition: color .2s linear;
+}
+
+.styled_link a:hover,
+.styled_icon:hover {
+    color: var(--infinity-blue);
+}
+
+.styled_h5 {
+    font-size: var(--h-26);
+}
+
+.styled_icon {
+    padding-block: 1.5rem;
+    padding-right: 1.5rem;
+    transition: color .2s linear;
+}
+
+
+/*.......................... media ...............................*/
+
+
+@media (max-width: 768px) {
+    .styled_link a {
+        font-size: var(--text-s);
+    }
+
+    .styled_h5 {
+        font-size: var(--h-20);
+    }
+
+    .styled_icon {
+        padding-right: 1rem;
+    }
+
+}

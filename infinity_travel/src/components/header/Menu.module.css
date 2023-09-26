@@ -1,0 +1,199 @@
+/*...................the desktop look....................*/
+.primary_navigation {
+    display: flex;
+    list-style-type: none;
+    padding: 0 2rem;
+    margin: 0;
+}
+
+.mobile_nav_toggle {
+    display: none;
+}
+
+.link_a {
+    text-decoration: none;
+    color: inherit;
+    transition: all .4s ease;
+    padding-right: .5rem;
+}
+
+.link_text {
+    display: inline-block;
+    border-left: 1px solid transparent;
+    transition: transform .4s ease;
+    padding-inline: .1rem;
+}
+
+
+.link_a:hover .link_text {
+    color: var(--infinity-blue);
+    border-left: 1px solid var(--infinity-blue);
+    border-right: 1px solid var(--infinity-blue);
+    transform: scale(1.05);
+}
+
+.styled_icon {
+    color: var(--infinity-blue);
+}
+
+.active {
+    font-weight: var(--bold);
+    background-color: var(--infinity-yellow);
+}
+
+.open {
+    .primary_navigation {
+        left: 0;
+        z-index: 1;
+    }
+}
+
+.close .btn_line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.close .btn_line:nth-child(2) {
+    opacity: 0;
+}
+
+.close .btn_line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+
+/*...................the mobile look.........................*/
+
+@media (max-width: 390px) {
+    .link_text {
+        font-size: var(--text-s);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .primary_navigation {
+        justify-content: center;
+        position: fixed;
+        z-index: 10;
+        flex-direction: column;
+        background: var(--infinity-overlay-fallback);
+        max-height: 100vh;
+        overflow-y: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 100%;
+        transform: translateX(0);
+        transition: left ease-in-out 1s;
+    }
+
+
+    .link_text {
+        padding-block: 1rem;
+        padding-right: 0;
+    }
+
+    .link .link_a:hover .link_text {
+        color: var(--infinity-hamburger-hover);
+        border-right: 0;
+        border-left: 1px solid var(--infinity-hamburger-hover);
+        transform: scale(1.1);
+        transition: transform .4s ease;
+    }
+
+    .close .btn_line:nth-child(1) {
+        background-color: var(--infinity-hamburger-hover);
+    }
+
+    .close .btn_line:nth-child(3) {
+        background-color: var(--purple-font);
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+
+    @supports(backdrop-filter: blur(.1rem)) {
+        .primary_navigation {
+            background: var(--infinity-overlay);
+            backdrop-filter: blur(.5rem);
+        }
+
+        .link .link_a:hover .link_text {
+            color: var(--purple-font);
+            border-left: 2px solid var(--infinity-blue);
+        }
+    }
+
+    /*the button*/
+    .mobile_nav_toggle {
+        position: absolute;
+        z-index: 9999;
+        display: block;
+        background-color: transparent;
+        border: none;
+        aspect-ratio: 1;
+        top: 1.6rem;
+        right: 2.5rem;
+        transition: all .4s ease-out;
+    }
+
+    .mobile_nav_toggle .btn_line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: var(--infinity-blue);
+        border-radius: .1rem;
+        transition: all .4s ease-out;
+    }
+
+    .link .link_a:hover .link_text {
+        color: var(--infinity-blue);
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .link_text {
+        font-size: var(--text-l);
+    }
+
+
+    .mobile_nav_toggle .btn_line {
+        width: 50px;
+        margin: 0 0 7px 0;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 846px) {
+    .link_a {
+        padding-right: .3rem;
+    }
+
+    .link_text {
+        font-size: 10px;
+    }
+
+    .mobile_nav_toggle {
+        display: none;
+    }
+
+}
+
+@media (min-width: 846px) and (max-width: 1024px) {
+    .link_text {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1250px) {
+    .link_text {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .link_text {
+        font-size: var(--text-l);
+    }
+
+}

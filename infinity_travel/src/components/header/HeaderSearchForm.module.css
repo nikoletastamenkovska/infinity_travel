@@ -1,0 +1,13 @@
+.hero_search_input {
+    width: 75%;
+    background-color: transparent;
+    border: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+}
+
+.submit_button {
+    background-color: transparent;
+    color: var(--purple-font);
+    border: none;
+}

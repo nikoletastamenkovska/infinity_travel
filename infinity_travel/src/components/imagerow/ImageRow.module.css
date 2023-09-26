@@ -1,0 +1,8 @@
+.imageRowContainer {
+    overflow-y: auto;
+    max-height: 366px;
+}
+
+.image {
+    cursor: pointer;
+}

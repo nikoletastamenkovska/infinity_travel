@@ -1,0 +1,131 @@
+:root {
+  /* colors */
+  --infinity-black: #000000;
+  --infinity-white: #FDFDFD;
+  --infinity-yellow: #FFCC16;
+  --infinity-purple: rgb(122, 64, 148);
+  --infinity-purple-transparent: rgba(122, 64, 148, .8);
+  --infinity-blue: #21B0B7;
+  --infinity-overlay: rgba(244, 165, 96, 0.196);
+  --infinity-dropdown: rgba(244, 165, 96);
+  --infinity-overlay-fallback: hsla(177, 96%, 50%, 0.595);
+  --infinity-hamburger-hover: #bda626;
+  --infinity-blue-hover: #053537f1;
+  --infinity-black-60: #210D2F99;
+
+  /* fonts */
+  --purple-font: #210D2F;
+  --blue-font: #2799a1;
+
+  --h-32: 32px;
+  --h-26: 26px;
+  --h-24: 24px;
+  --h20: 20px;
+
+  --text-l: 18px;
+  --text-m: 16px;
+  --text-s: 12px;
+
+  --font-regular: 400;
+  --semibold: 600;
+  --bold: 700;
+
+
+
+  --line-height-heading-s: 24.2px;
+  --line-height-text-l: 21.78px;
+
+  --padding-xs: 0.75rem;
+  --padding-s: 1rem;
+  --padding-m: 1.5rem;
+
+
+  /* the menu */
+  --overlay-color: rgba(25, 133, 138, 0.75);
+  --menu-speed: 0.75s;
+
+
+
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  line-height: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--text-m);
+  font-weight: var(--font-regular);
+  background-color: var(--infinity-white);
+  color: var(--purple-font);
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Inter', sans-serif;
+  color: var(--infinity-black);
+}
+
+h3 {
+  font-size: var(--h-26);
+  font-weight: var(--bold);
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--purple-font);
+  border: 1px solid var(--infinity-yellow);
+}
+
+.button_yelow {
+  border: 2px solid transparent;
+  width: 100%;
+  background-color: var(--infinity-yellow);
+  color: var(--purple-font);
+  font-size: var(--h20);
+  text-transform: uppercase;
+}
+
+.button_yelow:hover {
+  border: 2px solid var(--infinity-purple);
+  color: var(--infinity-purple);
+}
+
+.button_outline_yelow {
+  width: 100%;
+  font-weight: var(--semibold);
+  font-size: var(--text-l);
+  text-transform: uppercase;
+}
+
+@media (max-width : 768px) {
+  h3 {
+    font-size: var(--h20);
+  }
+
+  p {
+    font-size: var(--text-s);
+  }
+}

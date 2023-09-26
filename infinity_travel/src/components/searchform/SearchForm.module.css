@@ -1,0 +1,29 @@
+.hero_search_form {
+    display: none;
+}
+
+.hero_search_input {
+    display: none;
+}
+
+.hero_search_icon {
+    display: none;
+}
+
+/* .............media query................. */
+
+@media (min-width: 768px) {
+    .hero_search_form {
+        display: flex;
+    }
+
+    .hero_search_input {
+        padding: 11px;
+        width: 100%;
+        display: block;
+    }
+
+    .hero_search_icon {
+        display: block;
+    }
+}

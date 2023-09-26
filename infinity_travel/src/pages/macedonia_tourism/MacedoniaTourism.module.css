@@ -1,0 +1,45 @@
+.styled_button,
+.macedonia_button {
+    width: 50%;
+    border: none;
+    background-color: transparent;
+    color: var(--infinity-black-60);
+    font-size: var(--text-l);
+    font-family: 'Inter', sans-serif;
+}
+
+.macedonia_button {
+    font-size: var(--h-26);
+    color: var(--purple-font);
+    padding-left: 0;
+    text-align: left;
+}
+
+.styled_button:hover {
+    color: var(--purple-font);
+}
+
+.macedonia_button:hover {
+    color: var(--infinity-black-60);
+}
+
+.styled_color {
+    color: var(--purple-font);
+}
+
+.styled_h5 {
+    font-size: var(--h-26);
+    color: var(--purple-font);
+}
+
+@media (max-width: 768px) {
+    .macedonia_button {
+        font-size: var(--text-l);
+        color: var(--purple-font);
+        text-align: center;
+    }
+
+    .styled_h5 {
+        font-size: var(--text-l);
+    }
+}

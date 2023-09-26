@@ -1,0 +1,11 @@
+.styled_title {
+    font-size: var(--h-26);
+    font-weight: var(--bold);
+    color: var(--purple-font);
+}
+
+@media (max-width : 768px) {
+    .styled_title {
+        font-size: var(--h20);
+    }
+}

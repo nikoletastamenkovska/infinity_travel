@@ -1,0 +1,61 @@
+.acordion_title {
+    background-color: var(--infinity-blue);
+    color: var(--purple-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    font-size: var(--h20);
+}
+
+.acordion_content {
+    background-color: var(--infinity-blue);
+}
+
+.acordion_title>* {
+    padding-inline: .5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.acordion_animation_in {
+    animation: myAnim 1s linear 0s 1 normal forwards;
+}
+
+
+/*..................................media............................*/
+@media (max-width: 555px) {
+    .acordion_title {
+        padding: 1rem;
+    }
+
+    .acordion_title>* {
+        font-size: var(--text-m);
+        padding-inline: .25rem;
+    }
+
+    .chevron_down,
+    .chevron_up {
+        width: 20%;
+    }
+
+    .styled_envelope {
+        width: 15%;
+    }
+}
+
+
+/*...............key frames...................*/
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: rotateX(-100deg);
+        transform-origin: top;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+        transform-origin: top;
+    }
+}
