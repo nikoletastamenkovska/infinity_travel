@@ -57,7 +57,9 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async ({
 
   try {
     const res = await fetch(
-      `http://localhost:3000/api/search?q=${encodeURIComponent(q)}`
+      `https://infinity-travel-deploy.vercel.app/api/search?q=${encodeURIComponent(
+        q
+      )}`
     );
     const data: ArrangementType[] = await res.json();
 
